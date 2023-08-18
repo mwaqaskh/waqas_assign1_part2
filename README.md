@@ -259,12 +259,21 @@ docker inspect 39f1da1d180f16f13dab83abf39e53164ade9fe8ee6e32a28a24b12b9305dc97 
 
 
 
-■ 'docker exec' command to execute a command inside a running container
+# 'docker exec' command to execute a command inside a running container
 
  docker exec -d e2841c1bef4c8f1ddf4e629eff9237c433c052073a9400dbcfad7d73710918d7 touch execWorks 
 
-■ 'docker attach' command to attach to a running container
+# 'docker attach' command to attach to a running container
+
+docker attach e2841c1bef4c8f1ddf4e629eff9237c433c052073a9400dbcfad7d73710918d7                                                                                                ─╯
+[18/Aug/2023 18:00:02] "GET / HTTP/1.1" 200 6
+[18/Aug/2023 18:00:04] "GET / HTTP/1.1" 200 6
+
 ■ 'docker commit' command to create a new image from a container
+
+docker commit e2841c1bef4c8f1ddf4e629eff9237c433c052073a9400dbcfad7d73710918d7                                                                                                ─╯
+sha256:d808032fc54900cd2f3ab650b16248a30a9aa0a56e173dfbd4217bb7088d213c
+
 ■ 'docker cp' command to copy files/folders between the container and the
 host
 ■ 'docker stats' command to view the resource usage of containers
