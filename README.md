@@ -7,7 +7,7 @@ Docker is running with any error
 ![image](https://github.com/mwaqaskh/waqas_assign1_part2/assets/39801941/53c91f58-0210-44fd-a597-6cb6697064c9)
 
 
-● Step 3 (20 marks): used all below Docker Container Commands
+# Step 3 (20 marks): used all below Docker Container Commands
 
 ■ 'docker ps' command to list all running containers
 ![image](https://github.com/mwaqaskh/waqas_assign1_part2/assets/39801941/b741890d-5e0b-4e1e-b45e-d09e82b8e576)
@@ -24,6 +24,17 @@ d76c5bcb653b29241a636ef2915009989054913b0e2d5190fa67c9650142eff9
 container removed
 
 ■ 'docker logs' command to view the logs of a container
+docker logs 39f1da1d180f16f13dab83abf39e53164ade9fe8ee6e32a28a24b12b9305dc97                                                                                                  ─╯
+Watching for file changes with StatReloader
+[18/Aug/2023 15:47:50] "GET / HTTP/1.1" 200 6
+[18/Aug/2023 15:48:00] "GET / HTTP/1.1" 200 6
+[18/Aug/2023 15:48:07] "GET / HTTP/1.1" 200 6
+[18/Aug/2023 15:48:08] "GET / HTTP/1.1" 200 6
+[18/Aug/2023 15:48:14] "GET / HTTP/1.1" 200 6
+[18/Aug/2023 15:48:23] "GET / HTTP/1.1" 200 6
+[18/Aug/2023 15:48:44] "GET / HTTP/1.1" 200 6
+
+
 ■ 'docker inspect' command to view the details of a container
 ■ 'docker exec' command to execute a command inside a running container
 ■ 'docker attach' command to attach to a running container
