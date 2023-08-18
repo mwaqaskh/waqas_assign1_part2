@@ -269,23 +269,56 @@ docker attach e2841c1bef4c8f1ddf4e629eff9237c433c052073a9400dbcfad7d73710918d7  
 [18/Aug/2023 18:00:02] "GET / HTTP/1.1" 200 6
 [18/Aug/2023 18:00:04] "GET / HTTP/1.1" 200 6
 
-■ 'docker commit' command to create a new image from a container
+# 'docker commit' command to create a new image from a container
 
 docker commit e2841c1bef4c8f1ddf4e629eff9237c433c052073a9400dbcfad7d73710918d7                                                                                                ─╯
 sha256:d808032fc54900cd2f3ab650b16248a30a9aa0a56e173dfbd4217bb7088d213c
+![image](https://github.com/mwaqaskh/waqas_assign1_part2/assets/39801941/3a8308a6-eb68-45ce-800f-0843f52eeea4)
 
-■ 'docker cp' command to copy files/folders between the container and the
-host
-■ 'docker stats' command to view the resource usage of containers
-■ 'docker top' command to view the running processes inside a container
-■ 'docker start' command to start a stopped container
-■ 'docker pause' command to pause a running container
-■ 'docker unpause' command to unpause a paused container
+# 'docker cp' command to copy files/folders between the container and the
+docker cp 123.rtf 7e516a536db4bfcebd38d3768691c7cd202dea4f78500e8903b59e92f1cdc77c:/123.rtf                                                                                   ─╯
+Successfully copied 2.05kB to 7e516a536db4bfcebd38d3768691c7cd202dea4f78500e8903b59e92f1cdc77c:/123.rtf
+Error response from daemon: No such container: 7e516a536db4bfcebd38d3768691c7cd202dea4f78500e8903b59e92f1cdc77c
+
+
+# 'docker stats' command to view the resource usage of containers
+
+CONTAINER ID   NAME              CPU %     MEM USAGE / LIMIT     MEM %     NET I/O       BLOCK I/O        PIDS
+7bf456b08eea   amazing_lalande   1.05%     68.96MiB / 7.667GiB   0.88%     1.32kB / 0B   22.1MB / 430kB   3
+
+# 'docker top' command to view the running processes inside a container
+
+ docker top 7bf456b08eea80ac8ed90d077f9b9129d7d2c0beb69ba9f9e6de3dfcf54492cf                                                                                                   ─╯
+UID                 PID                 PPID                C                   STIME               TTY                 TIME                CMD
+root                1690                1665                0                   18:15               ?                   00:00:00            python3 manage.py runserver 0.0.0.0:8000
+root                1712                1690                1                   18:15               ?                   00:00:01            /usr/local/bin/python3 manage.py runserver 0.0.0.0:8000
+
+
+# 'docker start' command to start a stopped container
+
+docker start 7bf456b08eea80ac8ed90d077f9b9129d7d2c0beb69ba9f9e6de3dfcf54492cf                                                                                                 ─╯
+7bf456b08eea80ac8ed90d077f9b9129d7d2c0beb69ba9f9e6de3dfcf54492cf
+
+
+# 'docker pause' command to pause a running container
+docker pause 7bf456b08eea80ac8ed90d077f9b9129d7d2c0beb69ba9f9e6de3dfcf54492cf                                                                                                 ─╯
+7bf456b08eea80ac8ed90d077f9b9129d7d2c0beb69ba9f9e6de3dfcf54492cf
+
+![image](https://github.com/mwaqaskh/waqas_assign1_part2/assets/39801941/2c547c4b-0c4d-497e-abf7-c2b9c256f3ce)
+
+
+# 'docker unpause' command to unpause a paused container
+
+docker unpause 7bf456b08eea80ac8ed90d077f9b9129d7d2c0beb69ba9f9e6de3dfcf54492cf                                                                                               ─╯
+7bf456b08eea80ac8ed90d077f9b9129d7d2c0beb69ba9f9e6de3dfcf54492cf
 ■ 'docker rename' command to rename a container
 ■ 'docker wait' command to wait for a container to exit and then display its
 exit code
-■ 'docker attach' command to attach local standard input, output, and error
+# 'docker attach' command to attach local standard input, output, and error
 streams to a running container
+docker attach e2841c1bef4c8f1ddf4e629eff9237c433c052073a9400dbcfad7d73710918d7                                                                                                ─╯
+[18/Aug/2023 18:00:02] "GET / HTTP/1.1" 200 6
+[18/Aug/2023 18:00:04] "GET / HTTP/1.1" 200 6
 ■ 'docker port' command to display the public-facing port that a container is
 listening on
 ■ 'docker update' command to update a container's resource limits
