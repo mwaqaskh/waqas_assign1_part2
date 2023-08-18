@@ -10,9 +10,19 @@ Docker is running with any error
 ● Step 3 (20 marks): used all below Docker Container Commands
 
 ■ 'docker ps' command to list all running containers
+![image](https://github.com/mwaqaskh/waqas_assign1_part2/assets/39801941/b741890d-5e0b-4e1e-b45e-d09e82b8e576)
 
 ■ 'docker stop' command to stop a running container
+
+docker stop d76c5bcb653b29241a636ef2915009989054913b0e2d5190fa67c9650142eff9                                                                                                  ─╯
+d76c5bcb653b29241a636ef2915009989054913b0e2d5190fa67c9650142eff9
+![image](https://github.com/mwaqaskh/waqas_assign1_part2/assets/39801941/c7306765-c113-4dc5-8407-a8bddca4077b)
+
 ■ 'docker rm' command to remove a stopped container
+docker remove d76c5bcb653b29241a636ef2915009989054913b0e2d5190fa67c9650142eff9                                                                                                ─╯
+d76c5bcb653b29241a636ef2915009989054913b0e2d5190fa67c9650142eff9
+container removed
+
 ■ 'docker logs' command to view the logs of a container
 ■ 'docker inspect' command to view the details of a container
 ■ 'docker exec' command to execute a command inside a running container
