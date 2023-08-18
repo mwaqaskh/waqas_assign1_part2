@@ -312,14 +312,25 @@ docker pause 7bf456b08eea80ac8ed90d077f9b9129d7d2c0beb69ba9f9e6de3dfcf54492cf   
 docker unpause 7bf456b08eea80ac8ed90d077f9b9129d7d2c0beb69ba9f9e6de3dfcf54492cf                                                                                               ─╯
 7bf456b08eea80ac8ed90d077f9b9129d7d2c0beb69ba9f9e6de3dfcf54492cf
 ■ 'docker rename' command to rename a container
+─ docker rename amazing_lalande amazing_lalande21    
+
 ■ 'docker wait' command to wait for a container to exit and then display its
 exit code
+docker wait 7bf456b08eea80ac8ed90d077f9b9129d7d2c0beb69ba9f9e6de3dfcf54492cf 
+
 # 'docker attach' command to attach local standard input, output, and error
 streams to a running container
 docker attach e2841c1bef4c8f1ddf4e629eff9237c433c052073a9400dbcfad7d73710918d7                                                                                                ─╯
 [18/Aug/2023 18:00:02] "GET / HTTP/1.1" 200 6
 [18/Aug/2023 18:00:04] "GET / HTTP/1.1" 200 6
-■ 'docker port' command to display the public-facing port that a container is
+# 'docker port' command to display the public-facing port that a container is
 listening on
-■ 'docker update' command to update a container's resource limits
-■ 'docker restart' command to restart a running container
+ docker port 7bf456b08eea80ac8ed90d077f9b9129d7d2c0beb69ba9f9e6de3dfcf54492cf                                                                                                  ─╯
+8000/tcp -> 0.0.0.0:8000
+
+# 'docker update' command to update a container's resource limits
+docker update --cpu-shares 512 7bf456b08eea80ac8ed90d077f9b9129d7d2c0beb69ba9f9e6de3dfcf54492cf                                                                               ─╯
+7bf456b08eea80ac8ed90d077f9b9129d7d2c0beb69ba9f9e6de3dfcf54492cf
+# 'docker restart' command to restart a running container
+docker restart 7bf456b08eea80ac8ed90d077f9b9129d7d2c0beb69ba9f9e6de3dfcf54492cf                                                                                               ─╯
+7bf456b08eea80ac8ed90d077f9b9129d7d2c0beb69ba9f9e6de3dfcf54492cf
